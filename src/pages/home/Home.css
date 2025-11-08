@@ -1,0 +1,132 @@
+.home-container {
+  min-height: 100vh;
+  background: #10b981;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.home-content {
+  text-align: center;
+  color: white;
+  max-width: 400px;
+  width: 100%;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo-icon {
+  display: inline-block;
+  animation: rotate 3s linear infinite;
+  color: white;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.app-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.app-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.feature-icon {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+}
+
+.feature-item p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.login-button {
+  background: white;
+  color: #10b981;
+  border: none;
+  padding: 18px 60px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 300px;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+.welcome-text {
+  margin-top: 30px;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 2.5rem;
+  }
+
+  .feature-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .feature-item {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+}

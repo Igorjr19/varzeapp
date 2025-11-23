@@ -7,3 +7,9 @@
 .games-content {
   padding: 20px;
 }
+
+.games-content p {
+  text-align: center;
+  color: #9ca3af;
+  margin-top: 40px;
+}

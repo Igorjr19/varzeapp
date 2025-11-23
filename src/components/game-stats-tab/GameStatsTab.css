@@ -1,0 +1,95 @@
+.stats-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stats-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #9ca3af;
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.stat-value {
+  font-size: 1rem;
+  font-weight: 700;
+  min-width: 45px;
+}
+
+.stat-value.left {
+  text-align: right;
+  color: #10b981;
+}
+
+.stat-value.right {
+  text-align: left;
+  color: #6b7280;
+}
+
+.stat-label {
+  flex: 1;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.stat-bar-container {
+  display: flex;
+  height: 8px;
+  background: #f3f4f6;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.stat-bar {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.stat-bar.left {
+  background: #10b981;
+}
+
+.stat-bar.right {
+  background: #9ca3af;
+}
+
+.teams-legend {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 12px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.legend-color.green {
+  background: #10b981;
+}
+
+.legend-color.gray {
+  background: #9ca3af;
+}

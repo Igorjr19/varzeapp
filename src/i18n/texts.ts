@@ -118,6 +118,42 @@ export const texts = {
       physical: 'Físico',
     },
   },
+
+  games: {
+    status: {
+      pending: 'Pendente',
+      confirmed: 'Confirmado',
+      completed: 'Concluído',
+    },
+    confirmed: 'confirmados',
+    modal: {
+      title: 'Detalhes do jogo',
+    },
+    tabs: {
+      summary: 'Resumo',
+      stats: 'Estatísticas',
+      payment: 'Pagamento',
+    },
+    summary: {
+      noData: 'Nenhum dado disponível para este jogo',
+      scorers: 'Goleadores',
+    },
+    stats: {
+      noData: 'Estatísticas não disponíveis',
+      possession: 'Posse de bola',
+      shots: 'Chutes',
+      shotsOnTarget: 'Chutes no gol',
+      fouls: 'Faltas',
+    },
+    payment: {
+      noData: 'Dados de pagamento não disponíveis',
+      total: 'Total',
+      pricePerPlayer: 'Por jogador',
+      paid: 'Pago',
+      playersList: 'Jogadores',
+      confirmButton: 'Confirmar pagamento',
+    },
+  },
 } as const;
 
 export type Texts = typeof texts;

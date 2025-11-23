@@ -1,0 +1,148 @@
+.summary-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.summary-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #9ca3af;
+}
+
+.match-result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.team-logo {
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.team-score {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #10b981;
+}
+
+.vs-divider {
+  color: #d1d5db;
+  font-size: 1.2rem;
+  padding: 0 16px;
+}
+
+.players-section h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 12px 0;
+}
+
+.team-players {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.team-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.team-header.green {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.team-header.gray {
+  background: #e5e7eb;
+  color: #4b5563;
+}
+
+.team-logo-small {
+  font-size: 1rem;
+}
+
+.player-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  transition: all 0.2s ease;
+}
+
+.player-row:last-child {
+  margin-bottom: 0;
+}
+
+.player-row:hover {
+  background: #f3f4f6;
+}
+
+.player-avatar {
+  font-size: 1.2rem;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+  border-radius: 50%;
+}
+
+.player-name {
+  flex: 1;
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+.player-goals {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #10b981;
+}
+
+.goal-icon {
+  color: #10b981;
+  font-size: 0.8rem;
+}

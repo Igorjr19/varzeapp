@@ -105,6 +105,19 @@ export const texts = {
       loginLink: 'Logar',
     },
   },
+
+  profile: {
+    radarTitle: 'Estatísticas',
+    attributesTitle: 'Atributos',
+    attributes: {
+      pace: 'Ritmo',
+      shooting: 'Finalização',
+      passing: 'Passe',
+      dribbling: 'Drible',
+      defending: 'Defesa',
+      physical: 'Físico',
+    },
+  },
 } as const;
 
 export type Texts = typeof texts;

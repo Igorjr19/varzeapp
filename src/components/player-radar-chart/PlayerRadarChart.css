@@ -1,0 +1,30 @@
+.radar-chart-container {
+  margin-bottom: 20px;
+}
+
+.radar-chart-container.highlight-active {
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.radar-label {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.radar-label:hover {
+  fill: #059669 !important;
+}
+
+.radar-chart-container svg {
+  outline: none;
+}
+
+.radar-chart-container svg * {
+  outline: none;
+}
+
+.radar-chart-container circle {
+  outline: none;
+}

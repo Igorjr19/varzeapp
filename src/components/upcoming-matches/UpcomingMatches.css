@@ -1,0 +1,66 @@
+.upcoming-matches {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.matches-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 16px 0;
+}
+
+.no-matches {
+  text-align: center;
+  color: #9ca3af;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+}
+
+.match-card {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.match-card:last-child {
+  margin-bottom: 0;
+}
+
+.match-date {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.match-teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.team {
+  flex: 1;
+  text-align: center;
+}
+
+.team-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.match-vs {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #10b981;
+  padding: 6px 12px;
+  background: white;
+  border-radius: 6px;
+}

@@ -1,0 +1,31 @@
+.tournaments-container {
+  min-height: 100vh;
+  background: #f9fafb;
+  padding-bottom: 80px;
+}
+
+.tournaments-content {
+  padding: 20px 0;
+}
+
+.tournaments-carousel {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 0 20px 20px 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tournaments-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.tournaments-carousel > * {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+.tournament-details {
+  padding: 0 20px;
+}

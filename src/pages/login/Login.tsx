@@ -2,6 +2,7 @@ import { faArrowLeft, faFutbol } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { login } from '../../api/login.mock';
 import texts from '../../i18n/texts';
 import './Login.css';
 
@@ -9,10 +10,17 @@ export const Login = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Login attempt with:', { email, password });
+    setError('');
+    try {
+      await login(email, password);
+      navigate('/torneios');
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Login failed');
+    }
   };
 
   const handleBack = () => {
@@ -34,6 +42,8 @@ export const Login = () => {
         </div>
 
         <form className="login-form" onSubmit={handleSubmit}>
+          {error && <div className="error-message">{error}</div>}
+
           <div className="form-group">
             <label htmlFor="email">{texts.login.form.email.label}</label>
             <input

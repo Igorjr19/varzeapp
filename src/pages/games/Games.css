@@ -1,0 +1,9 @@
+.games-container {
+  min-height: 100vh;
+  background: #f9fafb;
+  padding-bottom: 80px;
+}
+
+.games-content {
+  padding: 20px;
+}

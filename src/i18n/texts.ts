@@ -53,6 +53,32 @@ export const texts = {
       'Por favor, acesse este app do seu smartphone para baixar e usar.',
     footer: 'VarzeApp - Gerenciando campos de futebol em movimento',
   },
+
+  bottomNav: {
+    games: 'Jogos',
+    tournaments: 'Torneios',
+    profile: 'Perfil',
+  },
+
+  tournaments: {
+    classification: {
+      title: 'Classificação',
+      position: 'PTS',
+      points: 'V',
+      wins: 'E',
+      draws: 'D',
+      losses: 'D',
+    },
+    upcomingMatches: {
+      title: 'Próxima Partida',
+      noMatches: 'Nenhuma partida agendada',
+    },
+    tabs: {
+      classification: 'Classificação',
+      matches: 'Próxima Partida',
+      statistics: 'Estatísticas',
+    },
+  },
 } as const;
 
 export type Texts = typeof texts;

@@ -1,4 +1,4 @@
-import { faArrowLeft, faFutbol } from '@fortawesome/free-solid-svg-icons';
+import { faFutbol } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -23,32 +23,22 @@ export const Login = () => {
     }
   };
 
-  const handleBack = () => {
-    navigate('/');
-  };
-
   return (
     <div className="login-container">
       <div className="login-content">
-        <button className="back-button" onClick={handleBack}>
-          <FontAwesomeIcon icon={faArrowLeft} />
-          <span>{texts.login.backButton}</span>
-        </button>
-
         <div className="login-header">
-          <FontAwesomeIcon icon={faFutbol} className="login-icon" />
-          <h1>{texts.login.title}</h1>
-          <p>{texts.login.subtitle}</p>
+          <div className="logo-circle">
+            <FontAwesomeIcon icon={faFutbol} className="login-icon" />
+          </div>
         </div>
 
         <form className="login-form" onSubmit={handleSubmit}>
           {error && <div className="error-message">{error}</div>}
 
           <div className="form-group">
-            <label htmlFor="email">{texts.login.form.email.label}</label>
             <input
-              type="email"
-              id="email"
+              type="text"
+              id="username"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder={texts.login.form.email.placeholder}
@@ -57,7 +47,6 @@ export const Login = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="password">{texts.login.form.password.label}</label>
             <input
               type="password"
               id="password"
@@ -79,9 +68,12 @@ export const Login = () => {
           </a>
           <p className="signup-text">
             {texts.login.footer.signupText}{' '}
-            <a href="#" className="signup-link">
+            <button
+              onClick={() => navigate('/register')}
+              className="signup-link"
+            >
               {texts.login.footer.signupLink}
-            </a>
+            </button>
           </p>
         </div>
       </div>

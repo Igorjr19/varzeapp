@@ -29,19 +29,19 @@ export const texts = {
     backButton: 'Voltar',
     form: {
       email: {
-        label: 'Email',
-        placeholder: 'seu@email.com',
+        label: 'Usuário',
+        placeholder: 'Digite seu usuário',
       },
       password: {
         label: 'Senha',
-        placeholder: '••••••••',
+        placeholder: 'Digite sua senha',
       },
-      submitButton: 'Entrar',
+      submitButton: 'ENTRAR',
     },
     footer: {
       forgotPassword: 'Esqueceu a senha?',
-      signupText: 'Não tem uma conta?',
-      signupLink: 'Cadastre-se',
+      signupText: 'Ainda não possui conta?',
+      signupLink: 'Registrar',
     },
   },
 
@@ -77,6 +77,32 @@ export const texts = {
       classification: 'Classificação',
       matches: 'Próxima Partida',
       statistics: 'Estatísticas',
+    },
+  },
+
+  register: {
+    form: {
+      email: {
+        label: 'Email',
+        placeholder: 'Digite seu email',
+      },
+      username: {
+        label: 'Nome de Usuário',
+        placeholder: 'Digite seu nome de usuário',
+      },
+      password: {
+        label: 'Senha',
+        placeholder: 'Digite sua senha',
+      },
+      confirmPassword: {
+        label: 'Confirmar Senha',
+        placeholder: 'Confirme sua senha',
+      },
+      submitButton: 'REGISTRAR',
+    },
+    footer: {
+      loginText: 'Já possui conta?',
+      loginLink: 'Logar',
     },
   },
 } as const;

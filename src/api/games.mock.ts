@@ -1,9 +1,20 @@
+export interface PlayerAttributes {
+  pace: number;
+  shooting: number;
+  passing: number;
+  dribbling: number;
+  defending: number;
+  physical: number;
+}
+
 export interface Player {
   id: number;
   name: string;
   avatar: string;
   goals?: number;
   assists?: number;
+  attributes?: PlayerAttributes;
+  rating?: number;
 }
 
 export interface Team {
@@ -92,9 +103,46 @@ export const getGames = async (): Promise<Game[]> => {
         logo: '0️⃣0️⃣',
         score: 1,
         players: [
-          { id: 1, name: 'Betoni', avatar: '👤', goals: 1 },
-          { id: 2, name: 'Kauan', avatar: '👤' },
-          { id: 3, name: 'Lucas Perrr', avatar: '👤' },
+          {
+            id: 1,
+            name: 'Betoni',
+            avatar: '👤',
+            goals: 1,
+            attributes: {
+              pace: 75,
+              shooting: 82,
+              passing: 70,
+              dribbling: 78,
+              defending: 50,
+              physical: 80,
+            },
+          },
+          {
+            id: 2,
+            name: 'Kauan',
+            avatar: '👤',
+            attributes: {
+              pace: 88,
+              shooting: 65,
+              passing: 75,
+              dribbling: 85,
+              defending: 45,
+              physical: 72,
+            },
+          },
+          {
+            id: 3,
+            name: 'Lucas Perrr',
+            avatar: '👤',
+            attributes: {
+              pace: 70,
+              shooting: 78,
+              passing: 80,
+              dribbling: 75,
+              defending: 60,
+              physical: 85,
+            },
+          },
         ],
       },
       team2: {
@@ -103,9 +151,47 @@ export const getGames = async (): Promise<Game[]> => {
         logo: '👨‍💻',
         score: 2,
         players: [
-          { id: 4, name: 'IgMiras', avatar: '👤', goals: 1 },
-          { id: 5, name: 'Gmenezes', avatar: '👤' },
-          { id: 6, name: 'Ateves', avatar: '👤', goals: 1 },
+          {
+            id: 4,
+            name: 'IgMiras',
+            avatar: '👤',
+            goals: 1,
+            attributes: {
+              pace: 80,
+              shooting: 88,
+              passing: 82,
+              dribbling: 86,
+              defending: 48,
+              physical: 76,
+            },
+          },
+          {
+            id: 5,
+            name: 'Gmenezes',
+            avatar: '👤',
+            attributes: {
+              pace: 72,
+              shooting: 70,
+              passing: 85,
+              dribbling: 80,
+              defending: 70,
+              physical: 78,
+            },
+          },
+          {
+            id: 6,
+            name: 'Ateves',
+            avatar: '👤',
+            goals: 1,
+            attributes: {
+              pace: 85,
+              shooting: 80,
+              passing: 78,
+              dribbling: 88,
+              defending: 42,
+              physical: 74,
+            },
+          },
         ],
       },
       stats: {

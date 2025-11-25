@@ -112,8 +112,13 @@
   margin-bottom: 0;
 }
 
-.player-row:hover {
+.player-row.clickable {
+  cursor: pointer;
+}
+
+.player-row.clickable:hover {
   background: #f3f4f6;
+  transform: translateX(2px);
 }
 
 .player-avatar {

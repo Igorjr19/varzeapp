@@ -153,6 +153,20 @@ export const texts = {
       playersList: 'Jogadores',
       confirmButton: 'Confirmar pagamento',
     },
+    playerEdit: {
+      title: 'Editar jogador',
+      goals: 'Gols',
+      assists: 'Assistências',
+      save: 'Salvar',
+      rate: 'Avaliar desempenho',
+    },
+    playerRating: {
+      title: 'Avaliar jogador',
+      description:
+        'Avalie o desempenho do jogador nesta partida ajustando cada atributo',
+      overall: 'Overall',
+      save: 'Salvar avaliação',
+    },
   },
 } as const;
 

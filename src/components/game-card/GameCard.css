@@ -1,25 +1,26 @@
 .game-card {
   background: white;
   border-radius: 12px;
-  padding: 16px;
+  padding: 20px;
   margin-bottom: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  -webkit-tap-highlight-color: transparent;
 }
 
-.game-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.game-card:active {
+  transform: scale(0.98);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .game-status {
   display: inline-block;
-  padding: 4px 12px;
+  padding: 6px 14px;
   border-radius: 12px;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .status-pending {
@@ -40,33 +41,37 @@
 .game-info {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .info-row {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 0.9rem;
+  gap: 10px;
+  font-size: 1rem;
   color: #4b5563;
+  line-height: 1.5;
 }
 
 .info-icon {
   color: #10b981;
-  width: 16px;
+  width: 18px;
+  font-size: 1.1rem;
 }
 
 .field-info {
-  padding-left: 24px;
-  font-size: 0.85rem;
+  padding-left: 28px;
+  font-size: 0.95rem;
   color: #6b7280;
+  line-height: 1.4;
 }
 
 .confirmation {
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .confirmation-text {
   font-weight: 600;
   color: #10b981;
+  font-size: 1.05rem;
 }

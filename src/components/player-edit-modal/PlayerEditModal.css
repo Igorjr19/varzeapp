@@ -29,17 +29,17 @@
 }
 
 .player-edit-header h3 {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #333;
   margin: 0;
 }
 
 .player-edit-body {
-  padding: 20px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 28px;
 }
 
 .player-info-card {
@@ -95,7 +95,7 @@
 }
 
 .stat-control label {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: #4b5563;
 }
@@ -104,12 +104,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 28px;
 }
 
 .control-button {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border: none;
   background: #10b981;
   color: white;
@@ -117,18 +117,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   cursor: pointer;
   transition: all 0.2s ease;
-}
-
-.control-button:hover:not(:disabled) {
-  background: #059669;
-  transform: scale(1.05);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .control-button:active:not(:disabled) {
-  transform: scale(0.95);
+  background: #059669;
+  transform: scale(0.92);
 }
 
 .control-button:disabled {
@@ -138,10 +135,10 @@
 }
 
 .stat-value {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #10b981;
-  min-width: 60px;
+  min-width: 70px;
   text-align: center;
 }
 
@@ -156,17 +153,19 @@
 .save-button,
 .rate-button {
   width: 100%;
-  padding: 14px;
+  padding: 16px;
   border: none;
   border-radius: 8px;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
+  -webkit-tap-highlight-color: transparent;
+  min-height: 52px;
 }
 
 .save-button {

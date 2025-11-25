@@ -13,8 +13,9 @@
   gap: 12px;
   overflow-x: auto;
   padding: 0 20px 20px 20px;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: x proximity;
   -webkit-overflow-scrolling: touch;
+  margin-bottom: 0;
 }
 
 .tournaments-carousel::-webkit-scrollbar {
@@ -22,8 +23,16 @@
 }
 
 .tournaments-carousel > * {
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   flex-shrink: 0;
+}
+
+.tournaments-carousel > *:first-child {
+  margin-left: 0;
+}
+
+.tournaments-carousel > *:last-child {
+  margin-right: 0;
 }
 
 .tournament-details {

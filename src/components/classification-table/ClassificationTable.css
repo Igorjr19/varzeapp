@@ -10,7 +10,7 @@
 }
 
 .classification-header h3 {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: #333;
   margin: 0;
@@ -19,10 +19,10 @@
 .table-header {
   display: flex;
   align-items: center;
-  padding: 8px 0;
+  padding: 10px 0;
   border-bottom: 2px solid #e5e7eb;
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: #666;
   text-transform: uppercase;
 }
@@ -30,8 +30,9 @@
 .table-row {
   display: flex;
   align-items: center;
-  padding: 12px 0;
+  padding: 14px 0;
   border-bottom: 1px solid #f3f4f6;
+  min-height: 52px;
 }
 
 .table-row:last-child {
@@ -41,7 +42,7 @@
 .table-cell {
   display: flex;
   align-items: center;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
 }
 
 .table-cell.pos {

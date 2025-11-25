@@ -27,8 +27,11 @@ export const Login = () => {
     <div className="login-container">
       <div className="login-content">
         <div className="login-header">
-          <div className="logo-circle">
-            <FontAwesomeIcon icon={faFutbol} className="login-icon" />
+          <div className="logo-container">
+            <div className="logo-circle">
+              <FontAwesomeIcon icon={faFutbol} className="login-icon" />
+            </div>
+            <h1 className="app-title">{texts.app.name}</h1>
           </div>
         </div>
 

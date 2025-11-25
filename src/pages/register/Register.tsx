@@ -39,8 +39,11 @@ export const Register = () => {
     <div className="register-container">
       <div className="register-content">
         <div className="register-header">
-          <div className="logo-circle">
-            <FontAwesomeIcon icon={faFutbol} className="register-icon" />
+          <div className="logo-container">
+            <div className="logo-circle">
+              <FontAwesomeIcon icon={faFutbol} className="register-icon" />
+            </div>
+            <h1 className="app-title">{texts.app.name}</h1>
           </div>
         </div>
 

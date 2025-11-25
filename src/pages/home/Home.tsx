@@ -1,7 +1,7 @@
 import {
   faCalendarDays,
+  faChartLine,
   faTrophy,
-  faUsers,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useNavigate } from 'react-router-dom';
@@ -29,16 +29,16 @@ export const Home = () => {
 
         <div className="feature-list">
           <div className="feature-item">
-            <FontAwesomeIcon icon={faCalendarDays} className="feature-icon" />
-            <p>{texts.home.features.bookFields}</p>
-          </div>
-          <div className="feature-item">
-            <FontAwesomeIcon icon={faUsers} className="feature-icon" />
-            <p>{texts.home.features.manageTeams}</p>
-          </div>
-          <div className="feature-item">
             <FontAwesomeIcon icon={faTrophy} className="feature-icon" />
-            <p>{texts.home.features.trackMatches}</p>
+            <p>{texts.home.features.manageTournaments}</p>
+          </div>
+          <div className="feature-item">
+            <FontAwesomeIcon icon={faCalendarDays} className="feature-icon" />
+            <p>{texts.home.features.manageMatches}</p>
+          </div>
+          <div className="feature-item">
+            <FontAwesomeIcon icon={faChartLine} className="feature-icon" />
+            <p>{texts.home.features.trackStats}</p>
           </div>
         </div>
 

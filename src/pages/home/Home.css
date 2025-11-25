@@ -37,7 +37,6 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .app-subtitle {
@@ -71,6 +70,11 @@
   justify-content: center;
   color: white;
   font-size: 32px;
+}
+
+.feature-icon svg {
+  width: 32px;
+  height: 32px;
 }
 
 .feature-item p {

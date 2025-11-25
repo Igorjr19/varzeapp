@@ -17,9 +17,9 @@ export const texts = {
     loginButton: 'Entrar',
     welcomeText: 'Bem-vindo! Toque em entrar para começar',
     features: {
-      bookFields: 'Reservar campos',
-      manageTeams: 'Gerenciar times',
-      trackMatches: 'Acompanhar partidas',
+      manageTournaments: 'Gerenciar torneios',
+      manageMatches: 'Organizar partidas',
+      trackStats: 'Acompanhar estatísticas',
     },
   },
 

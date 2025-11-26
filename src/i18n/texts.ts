@@ -12,6 +12,40 @@ export const texts = {
     password: 'Senha',
   },
 
+  createGame: {
+    title: 'Organizar jogo',
+    form: {
+      location: {
+        label: 'Local',
+        placeholder: 'Digite o local',
+      },
+      price: {
+        label: 'Preço',
+        placeholder: 'R$ 0,00',
+      },
+      date: {
+        label: 'Data',
+      },
+      time: {
+        label: 'Horário',
+      },
+      modality: {
+        label: 'Modalidade',
+        placeholder: 'Selecione',
+        options: {
+          society: 'Society',
+          futsal: 'Futsal',
+          campo: 'Campo',
+        },
+      },
+      players: {
+        label: 'Jogadores',
+        placeholder: 'Buscar jogador',
+      },
+      submitButton: 'Criar Jogo',
+    },
+  },
+
   home: {
     subtitle: 'Gerencie suas partidas e campeonatos facilmente',
     loginButton: 'Entrar',
